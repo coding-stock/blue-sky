@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Style+Script&display=swap');
+:root{
+    --color:#f3cd8e;
+    --font_inter :"Inter", sans-serif;
+    --font_openSans: "Open Sans", sans-serif;
+    --font_style: "Style Script", cursive;
+    --font_body:"Bodoni Moda", serif;
+    --background : #f9f9f9;
+    --button:rgba(0, 0, 0, 0.819);
+}
+body{
+    color: white;
+    margin: 0;
+}
+header{
+    background-image: url(3312580.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:fit-content;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.44);
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+}
+nav .tabs a{
+    color: white;
+    font-family: var(--font_openSans);
+    text-decoration:none;
+    margin: 10px;
+}
+nav .logo{
+    font-size: 20px;
+    font-family: var(--font_inter);
+}
+.home{
+    margin-top: 5rem;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.home h1{
+    font-size: 5rem;
+    display: inline;
+    color:white;
+    font-family: var(--font_openSans);
+}
+
+.home button{
+    width: 16.5rem;
+    border-radius: 20px;
+    height: 50px;
+    border: none;
+    text-align: left;
+    font-family: var(--font_openSans);
+    font-size: 30px;  
+}
+.bottom{
+    position: relative;
+}
+.home img{
+    width: 40px;
+    position: absolute;
+    left: 13.6rem;
+    top: 10%;
+}
+.mobile{
+    display: none;
+}
+/*Tablet*/@media (max-width:1200px) {
+    .home button{
+    width: 12.3rem;
+    height: 40px;
+    font-size: 25px;
+}
+    .home h1{
+       font-size: 2.9rem; 
+    }
+    .home img{
+    width: 34px;
+    position: absolute;
+    left: 9.9rem;
+    top: 0.2rem;
+}
+}
+/*Mobile*/@media (max-width:600px) {
+    html,body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    nav{
+        padding: 20px;
+    }
+    .home{
+      width: 70%;
+    }
+    .home h1{
+        font-size: 1.8rem;
+    }
+    .home button{
+    width: 9rem;
+    height: 40px;
+    font-size: 100%;
+    }
+    .home img{
+    width: 33px;
+    position: absolute;
+    left: 6.7rem;
+    top: 0.2rem;        
+    }
+    .mobile{
+        display: block;
+    }
+    .comp{
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile .mobile_tabs img{
+        width: 30%;
+    }
+    .mobile .mobile_tabs{
+        width: 20%;
+        text-align: right;
+    }
+}
