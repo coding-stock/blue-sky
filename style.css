@@ -17,8 +17,6 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     height:fit-content;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 nav{
     display: flex;
@@ -60,6 +58,7 @@ nav .logo{
     text-align: left;
     font-family: var(--font_openSans);
     font-size: 30px;  
+    margin-bottom: 5rem;
 }
 .bottom{
     position: relative;
@@ -68,7 +67,7 @@ nav .logo{
     width: 40px;
     position: absolute;
     left: 13.6rem;
-    top: 10%;
+    top: 0.3rem;
 }
 .mobile{
     display: none;
@@ -76,65 +75,93 @@ nav .logo{
 .skills{
     display: flex;
     justify-content: space-between;
-    padding: 30px;   
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+    bottom: 2rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color:var(--background);
 }
 .skills_text , .skills_boxes{
-    margin-top: 10rem;
+    margin-top: 20rem;
 }
 .skills_text .text{
     position: sticky;
     top: 10rem;
+    width: 80%;
 }
-.skills_text h3 {
-    
+.skills_text h3 { 
     font-family: var(--font_inter);
-    font-size: 30px;
+    font-size: 40px;
 }
 .skills_text h1{
     font-family: var(--font_openSans);
-    font-size: 35px;
+    font-size: 45px;
 }
 .skills_boxes{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     gap: 1rem;
 }
 .skills_boxes .box{
-    width: 100%;
-    aspect-ratio: 1/1;
+    width: 57rem;
+    aspect-ratio: 2/1;
     background-color: rgb(80, 39, 80);
     position: sticky;
     top: 10rem;
     color: white;
+    border-radius: 5px;
+    box-shadow: 14px 4px 7px rgba(0, 0, 0, 0.286);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 2.7rem;
 }
+
 .skills_boxes .box:nth-child(even){
     background-color: rgb(26, 19, 29);
     color: white;
 }
 .pic{
     height: 100vh;
+    background-color: cadetblue;
 }
 
 /*Tablet*/@media (max-width:1200px) {
+    .skills_text .text h1{
+        font-size: 35px;
+    }
+    .skills_boxes .box{
+        max-width: 25rem;
+        font-size: 20px;
+    }
+    .skills_boxes{
+        width: 60%;
+    }
     .home button{
     width: 12.3rem;
-    height: 40px;
+    height: 55px;
     font-size: 25px;
 }
     .home h1{
        font-size: 2.9rem; 
     }
     .home img{
-    width: 34px;
+    width: 40px;
     position: absolute;
-    left: 9.9rem;
-    top: 0.2rem;
+    left: 9.4rem;
+    top: 0.4rem;
 }
 }
-/*Mobile*/@media (max-width:600px) {
+/*Mobile*/@media (max-width:650px) {
+    * {
+  box-sizing: border-box;
+    }
     html,body{
-        overflow-x: hidden;
+        
         width: 100%;
     }
     nav{
@@ -176,5 +203,22 @@ nav .logo{
     }
     .skills{
         flex-direction: column;
+    }
+    .skills_text{
+        padding: 10px;
+    }
+    .skills_text .text h1{
+        font-size: 32px;
+        
+    }
+    .skills_boxes{
+        width: 82%;
+    }
+    .skills_boxes .box{
+        max-width: 28rem;
+        aspect-ratio: 2/1;
+        top: 5rem;
+        flex: 1;
+        font-size: 16px;
     }
 }
