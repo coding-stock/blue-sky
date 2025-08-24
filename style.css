@@ -9,7 +9,6 @@
     --button:rgba(0, 0, 0, 0.819);
 }
 body{
-    color: white;
     margin: 0;
 }
 header{
@@ -27,7 +26,6 @@ nav{
     padding: 30px;
     background-color: rgba(128, 128, 128, 0.44);
     border-bottom: 3px solid black;
-    border-radius: 5px;
 }
 nav .tabs a{
     color: white;
@@ -38,6 +36,7 @@ nav .tabs a{
 nav .logo{
     font-size: 20px;
     font-family: var(--font_inter);
+    color: white;
 }
 .home{
     margin-top: 5rem;
@@ -73,6 +72,44 @@ nav .logo{
 }
 .mobile{
     display: none;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+.skills_text h3 {
+    position: sticky;
+    top: 10rem;
+    font-family: var(--font_inter);
+    font-size: 30px;
+}
+.skills_text h1{
+    position: sticky;
+    top: 12rem;
+    font-family: var(--font_openSans);
+    font-size: 35px;
+}
+.skills_boxes{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+.skills_boxes .box{
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(26, 19, 29);
+    position: sticky;
+    top: 10rem;
+}
+.skills_boxes .box:nth-child(even){
+    background-color: rgb(255, 98, 255);
+    color: white;
+}
+.pic{
+    height: 100vh;
 }
 /*Tablet*/@media (max-width:1200px) {
     .home button{
@@ -131,5 +168,8 @@ nav .logo{
     .mobile .mobile_tabs{
         width: 20%;
         text-align: right;
+    }
+    .skills{
+        flex-direction: column;
     }
 }
