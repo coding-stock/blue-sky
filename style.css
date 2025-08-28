@@ -8,9 +8,13 @@
     --background : #f9f9f9;
     --button:rgba(0, 0, 0, 0.819);
 }
-body{
-    margin: 0;
-}
+ * {
+  box-sizing: border-box;
+    }
+    html,body{  
+        width: 100%;
+        margin: 0;
+    }
 header{
     background-image: url(3312580.jpg);
     background-size: cover;
@@ -139,7 +143,7 @@ nav .logo{
     z-index: 10;
 }
 .team{
-    background-color: rgb(20, 8, 20);
+    background-color: #140814;
     margin-top: -3rem; 
     padding-top: 5rem;
 }
@@ -180,6 +184,20 @@ nav .logo{
 }
 .position{
     color: rgb(181, 181, 181);
+}
+.company{
+    font-family: var(--font_inter);
+    background-color: rgb(193, 193, 193);
+    width: 100%;
+}
+.company div{
+    padding: 10px;
+}
+.company img{
+    width: 100%;
+}
+.company h1{
+    font-family: var(--font_openSans);
 }
 /*Tablet*/@media (max-width:1200px) {
     .founders div article .quote{
@@ -228,6 +246,9 @@ nav .logo{
 }
 }
 /*Mobile*/@media (max-width:650px) {
+    .company h1{
+        text-align: center;
+    }
     .founders div article .quote{
         font-size: 11px;
         width: 100%;
@@ -239,13 +260,7 @@ nav .logo{
         text-align: left;
         width: 100%;
     }
-    * {
-  box-sizing: border-box;
-    }
-    html,body{
-        
-        width: 100%;
-    }
+   
     nav{
         padding: 20px;
     }
