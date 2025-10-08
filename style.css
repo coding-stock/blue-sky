@@ -91,6 +91,9 @@ nav .logo{
 .skills_text , .skills_boxes{
     margin-top: 5rem;
 }
+.skills_text{
+    width: 50%; 
+}
 .skills_text .text{
     position: sticky;
     top: 10rem;
@@ -111,8 +114,7 @@ nav .logo{
     gap: 1rem;
 }
 .skills_boxes .box{
-    width: 57rem;
-    aspect-ratio: 2/1;
+    width: 90%;
     background-color: rgb(80, 39, 80);
     position: sticky;
     top: 10rem;
@@ -125,8 +127,12 @@ nav .logo{
     padding: 30px;
     font-size: 2.5rem;
     font-family: var(--font_openSans);
+    overflow-wrap: break-word; /* makes long words wrap */
+    word-break: break-word;
 }
-
+.skills_boxes .box h1{
+    font-size: 100%;
+}
 .skills_boxes .box:nth-child(even){
     background-color: rgb(26, 19, 29);
     color: white;
@@ -216,7 +222,10 @@ nav .logo{
     }
     .founders{
     flex-direction: column;
-}
+    }
+    .skills_text{
+        width: 100%;
+    }
     .skills_text .text h1{
         font-size: 35px;
     }
