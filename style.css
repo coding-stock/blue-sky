@@ -370,7 +370,9 @@ nav .logo{
         text-align: left;
         width: 100%;
     }
-   
+    .founders div h1{
+        font-size: 1rem;
+    }
     nav{
         padding: 20px;
     }
