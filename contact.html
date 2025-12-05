@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     @media (max-width:600px) {
+  
+    .contact_form form input , .contact_form form textarea{
+    width:20rem;
+    height: 50px;
+   }
+   .contact_form form textarea{
+    height: 100px;
+}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="comp">
+            <div class="logo">Blue Sky</div>
+            <div class="tabs">
+                <a href="http://127.0.0.1:5500/index.html">Home</a>
+                <a href="http://127.0.0.1:5500/index.html#curve">About</a>
+                <a href="http://127.0.0.1:5500/contact.html">Contact us</a>
+            </div>
+        </nav>
+        <nav class="mobile">
+            <div class="logo">Blue Sky</div>
+            <div class="mobile_tabs">
+                <img id="menu" src="menu.png" alt="">
+            </div>
+            <article class="links">
+                <img src="/media/close.png" alt="" class="close">
+                <a href="http://127.0.0.1:5500/index.html" onclick="window.location.reload();">Home</a>
+                <a href="http://127.0.0.1:5500/index.html#curve" onclick="window.location.reload();">About</a>
+                <a href="http://127.0.0.1:5500/contact.html" onclick="window.location.reload();">Contact us</a>
+            </article>
+        </nav>
+    </header>
+    <main class="contact">
+        <section class="contact_info">
+            <h1>Contact us</h1>
+            <p>For more information contact us through Email or call</p>
+            <h4><span style="font-weight: 400;">Email: </span>blueskyleadershiprw@gmail.com</h4>
+            <h4><span style="font-weight: 400;">Call:</span><a href="tel:0732506821">0732506821</a></h4>
+        </section>
+        <section class="contact_form">       
+            <form action="">
+                <h1>Get in touch</h1>
+                <input type="text" placeholder="Your Name" id="name" required><br><br>
+                <input type="email" placeholder="Your Email" id="email"  required><br><br>
+                <textarea placeholder="Your Message" id="message" required></textarea><br><br>
+                <button type="submit" onclick="sendToWhatsApp()">Send Message</button>
+            </form>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>

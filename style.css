@@ -507,3 +507,73 @@ footer{
     font-family: var(--font_inter);
     margin-top: 30px;
 }
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    padding: 10px;
+    overflow-x: hidden;
+}
+.contact_info{
+    font-family: var(--font_inter);
+}
+.contact_info h1{
+    color: var(--purple);
+    font-size: 300%;
+}
+.contact_info p{
+    font-size: 100%;
+    width: 60%;
+}
+.contact_info a{
+    text-decoration: none;
+    color: var(--purple);  
+}
+.contact_form{
+    display: flex;
+    justify-content: flex-start;
+    font-family: var(--font_inter);
+}
+.contact_form form input , .contact_form form textarea{
+    width:30rem;
+    height: 50px;
+}
+.contact_form form textarea{
+    height: 100px;
+}
+.contact_form button{
+    width: 10rem;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--purple);
+    color: white;
+    font-family: var(--font_inter);
+    font-size: 1.2rem;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 100000;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--font_inter);
+    font-size: 3rem;
+}
+.links .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+}
