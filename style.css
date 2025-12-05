@@ -184,6 +184,16 @@ nav .logo{
     text-align: center;
     align-self: center;
     margin-left: 5rem;
+    animation-name: word ;
+    animation-timeline: view(90% 0%);
+}
+@keyframes word {
+    from{
+        transform: translateX(100px);
+    }
+    to{
+        transform: translateX(0px);
+    }   
 }
 .founders div img{
     width: 40%;
@@ -202,6 +212,20 @@ nav .logo{
 }
 #curve{
     width: 100%;
+}
+.about{
+    animation-name: fadeIn;
+    animation-timeline: view(70% 0%);
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 .about , .standfor{
     width: 97%;
@@ -224,6 +248,35 @@ nav .logo{
     border-radius: 7px;
     width: 100%;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.415);
+}
+.box:nth-child(even){
+    background-color: #e4c4e3;
+    animation-name: slideIn;
+    animation-timeline: view(70% 0%);
+}
+@keyframes slideIn {
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.box:nth-child(odd){
+    animation-name: Left;
+    animation-timeline: view(70% 0%);
+}
+@keyframes Left {
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 .box p{
     width: 100%;
@@ -279,6 +332,19 @@ nav .logo{
     font-size: 1.1rem;
     margin: 0;
     
+}
+.timeline li{
+    animation-name: slideup;
+    animation-timeline: view(30% 0%);
+}
+@keyframes slideup {
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 1;
+    }
 }
 /*Tablet*/@media (max-width:1200px) {
     .standfor_container{
