@@ -3,6 +3,7 @@ const mobile_tabs = document.querySelector(".links");
 const menu = document.querySelector("#menu");
 mobile_tabs.style.display = "none"
 document.body.style.overflow = "auto";
+const donateBtn = document.getElementById("donate");
 function sendToWhatsApp() {
   const name = document.getElementById("name").value;  
   const email = document.getElementById("email").value;
@@ -29,3 +30,7 @@ menu.addEventListener("click", () => {
   document.body.style.overflow = "hidden";
 
 });
+donateBtn.addEventListener("click", () => {
+    const convert = encodeURIComponent("*182*1*2*0732506821#");
+    window.location.href = "tel:" + convert;
+})
