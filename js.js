@@ -34,3 +34,10 @@ donateBtn.addEventListener("click", () => {
     const convert = encodeURIComponent("*182*1*2*0732506821#");
     window.location.href = "tel:" + convert;
 })
+const loader = document.querySelector(".loading");
+const img = new Image();
+img.src = "3312580.jpg";
+
+img.onload = function() {
+  loader.style.display = "none";
+}
