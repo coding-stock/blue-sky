@@ -13,13 +13,12 @@ export default function Contact() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     
-    const phone = "250732506821"
+    
       const finalMessage = `
 Name: ${formData.name}
 Email: ${formData.email}
-Message: ${formData.message}
-Phone: ${phone}`
-const emailURL = `mailto:blueskyprogram@gmail.com?subject=Blue%20Sky%20Program%20Contact&body=${encodeURIComponent(finalMessage)}`
+Message: ${formData.message}`
+const emailURL = `mailto:blueskyleadershiprw@gmail.com?subject=Blue%20Sky%20Program%20Contact&body=${encodeURIComponent(finalMessage)}`
     
     window.open(emailURL, "_blank")
   }
@@ -39,11 +38,11 @@ const emailURL = `mailto:blueskyprogram@gmail.com?subject=Blue%20Sky%20Program%2
             </p>
             <p>
               <strong>Email:</strong>{' '}
-              <a href="mailto:blueskyprogram@gmail.com">blueskyprogram@gmail.com</a>
+              <a href="mailto:blueskyleadershiprw@gmail.com">blueskyleadershiprw@gmail.com</a>
             </p>
             <p>
               <strong>Phone:</strong>{' '}
-              <a href="tel:+250732506821">+250 732 506 821</a>
+              <a href="tel:+250792870641">+250 792 870 641</a>
             </p>
           </div>
           
