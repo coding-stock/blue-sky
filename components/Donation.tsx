@@ -2,7 +2,7 @@
 
 export default function Donation() {
   const handleDonate = () => {
-    const convert = encodeURIComponent("*182*1*2*0732506821#")
+    const convert = encodeURIComponent("*182*1*1*0792870641#")
     window.location.href = "tel:" + convert
   }
 
