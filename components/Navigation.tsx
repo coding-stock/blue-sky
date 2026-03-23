@@ -19,7 +19,7 @@ export default function Navigation() {
     <>
       {/* Desktop Navigation */}
       <nav className="comp">
-        <div className="logo">Blue Sky</div>
+        <div className="logo">Blue Sky Leadership</div>
         <div className="tabs">
           <Link href="/">Home</Link>
           <a onClick={() => scrollToSection('curve')} style={{ cursor: 'pointer' }}>About</a>

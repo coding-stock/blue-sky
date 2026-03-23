@@ -51,13 +51,15 @@ nav .tabs a {
 nav .tabs a:hover {
   opacity: 0.8;
 }
-
 nav .logo {
   font-size: 20px;
   font-family: var(--font_inter);
   color: white;
 }
 
+.logo{
+  font-size: 18px;
+}
 .home {
   margin-top: 5rem;
   padding: 10px;

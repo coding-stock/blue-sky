@@ -9,6 +9,7 @@ import Gallery from '@/components/Gallery'
 import Donation from '@/components/Donation'
 import Loading from '@/components/Loading'
 import Head from 'next/head'
+import Image from 'next/image'
 export default function Home() {
   return (
     <>
